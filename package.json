@@ -1,0 +1,22 @@
+{
+  "name": "haruka-genshin-mini-player",
+  "version": "0.1.0",
+  "private": true,
+  "description": "左下角置顶的 B 站小窗播放器，用于跟着原神大世界跑图视频",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "clean": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\"",
+    "start": "pnpm build && node scripts/launch.mjs",
+    "selftest": "pnpm build && node scripts/launch.mjs --self-test"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "electron": "^45.0.0",
+    "typescript": "^7.0.2"
+  }
+}

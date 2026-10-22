@@ -1,0 +1,9 @@
+node_modules/
+dist/
+release/
+*.log
+*.tsbuildinfo
+docs/
+
+# 自检截图（docs/screenshots 里的效果图需要提交）
+/shot*.png
